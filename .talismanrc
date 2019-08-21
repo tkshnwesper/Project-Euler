@@ -1,0 +1,7 @@
+fileignoreconfig:
+- filename: 8/8.hs
+  checksum: 778c66e864a116eb5a3aa38ea02d9352584291d53933728f6a498ea9fc11bc94
+  ignore_detectors: []
+- filename: 8/README.txt
+  checksum: 4da33f5ec48c35668841de7de8a9613969a2fc90600c4b7fd64ce98df19990a4
+  ignore_detectors: []
