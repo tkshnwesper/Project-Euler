@@ -24,10 +24,10 @@ number = concat [
 
 main = print $ maximum (productsOfThirteen number)
 
-productOfThirteen :: [Char] -> Int
-productOfThirteen = product . (map digitToInt)
+productOfThirteen :: String -> Int
+productOfThirteen = product . map digitToInt
 
-productsOfThirteen :: [Char] -> [Int]
+productsOfThirteen :: String -> [Int]
 productsOfThirteen n
-  | length n < 13 = productOfThirteen n : []
+  | length n <= 13 = productOfThirteen n : []
   | otherwise = productOfThirteen (take 13 n) : productsOfThirteen (tail n)
