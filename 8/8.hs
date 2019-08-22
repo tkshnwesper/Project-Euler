@@ -1,6 +1,7 @@
 import Data.Char(digitToInt)
 
-number = concat [
+number :: [Int]
+number = concatMap (map digitToInt) [
   "73167176531330624919225119674426574742355349194934",
   "96983520312774506326239578318016984801869478851843",
   "85861560789112949495459501737958331952853208805511",
@@ -24,10 +25,7 @@ number = concat [
 
 main = print $ maximum (productsOfThirteen number)
 
-productOfThirteen :: String -> Int
-productOfThirteen = product . map digitToInt
-
-productsOfThirteen :: String -> [Int]
+productsOfThirteen :: [Int] -> [Int]
 productsOfThirteen n
-  | length n <= 13 = productOfThirteen n : []
-  | otherwise = productOfThirteen (take 13 n) : productsOfThirteen (tail n)
+  | length n <= 13 = product n : []
+  | otherwise = product (take 13 n) : productsOfThirteen (tail n)
