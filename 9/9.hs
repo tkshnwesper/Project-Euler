@@ -1,3 +1,9 @@
-main = print triplets
+main = print $ head triplets
 
-triplets = head [a * b * c | c <- [1000,999..1], b <- [0..c], a <- [0..b], a < b, b < c, a + b + c == 1000, a^2 + b^2 == c^2]
+triplets = [
+  a * b * c |
+  c <- [1..998],
+  b <- [1..c],
+  a <- [1..b],
+  a + b + c == 1000,
+  a^2 + b^2 == c^2 ]
