@@ -1,7 +1,16 @@
-sum = 0
+import math
+import sys
 
-for i in range(1, 1000):
-    if i % 3 == 0 or i % 5 == 0:
-        sum += i
+LIMIT = int(sys.argv[1]) - 1
 
-print(sum)
+
+def sum_of_multiples(d, limit):
+    n = math.floor(limit / d)
+    return int((n ** 2 + n) * d / 2)
+
+
+multiples_sum_three = sum_of_multiples(3, LIMIT)
+multiples_sum_five = sum_of_multiples(5, LIMIT)
+multiples_sum_fifteen = sum_of_multiples(15, LIMIT)
+
+print(multiples_sum_three + multiples_sum_five - multiples_sum_fifteen)
