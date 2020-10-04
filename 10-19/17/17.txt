@@ -1,0 +1,65 @@
+one   3
+two   3
+three 5
+four  4
+five  4
+six   3
+seven 5
+eight 5
+nine  4
+ten   3
+=======
+total 39
+
+eleven    6
+twelve    6
+thirteen  8
+fourteen  8
+fifteen   7
+sixteen   7
+seventeen 9
+eighteen  8
+nineteen  8
+twenty    6
+===========
+total     73
+
+thirty  6
+forty   5
+fifty   5
+sixty   5
+seventy 7
+eighty  6
+ninety  6
+hundred 7
+=========
+total   47
+
+1-19 = 106
+6 * 10 + 36
+6 * 10 + 36
+5 * 10 + 36
+.
+.
+.
+10 * 46 + 36 * 8 = 748
+one hundred = 10
+1-99 = 854
+
+one hundred         3 + 7
+two hundred         3 + 7
+...
+9 * 7 + 36 = 99
+
+one hundred and ... (3 + 7 + 3) * 854
+two hundred and ... (3 + 7 + 3) * 854
+...
+854 * (10 * 9 + 36)
+
+one thousand = 3 + 8
+
+--------
+
+854 * 10 = 8540
+99 * 36 = 3564
+10 * 99 * 9 = 8910
